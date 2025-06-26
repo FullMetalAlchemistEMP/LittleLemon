@@ -1,3 +1,3 @@
-/api/booking/tables
-/api/menu-items/
-/restaurant/menu/items/
+/restaurant/
+/restaurant/booking/tables/
+/restaurant/menu/items

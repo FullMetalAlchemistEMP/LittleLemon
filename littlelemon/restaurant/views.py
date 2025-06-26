@@ -6,9 +6,11 @@ from rest_framework import generics
 from rest_framework import viewsets 
 from rest_framework import permissions
 
-def index(request):
-    return render(request, 'index.html', {})
+# Page views
+def home(request):
+    return render(request, 'index.html')
 
+# REST API views
 class MenuItemsView(generics.ListCreateAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
